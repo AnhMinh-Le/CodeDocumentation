@@ -49,13 +49,6 @@ codedocumentation generate --github-pages --create-branch
 
 codedocumentation is an open-source framework for **automated repository-level documentation** across seven programming languages. It generates holistic, architecture-aware documentation that captures not only individual functions but also their cross-file, cross-module, and system-level interactions.
 
-### Key Innovations
-
-| Innovation | Description | Impact |
-|------------|-------------|--------|
-| **Hierarchical Decomposition** | Dynamic programming-inspired strategy that preserves architectural context | Handles codebases of arbitrary size (86K-1.4M LOC tested) |
-| **Recursive Agentic System** | Adaptive multi-agent processing with dynamic delegation capabilities | Maintains quality while scaling to repository-level scope |
-| **Multi-Modal Synthesis** | Generates textual documentation, architecture diagrams, data flows, and sequence diagrams | Comprehensive understanding from multiple perspectives |
 
 ### Supported Languages
 
@@ -242,32 +235,6 @@ Generated documentation includes both **textual descriptions** and **visual arti
 
 ---
 
-## Experimental Results
-
-codedocumentation has been evaluated on **codedocumentationBench**, the first benchmark specifically designed for repository-level documentation quality assessment.
-
-### Performance by Language Category
-
-| Language Category | codedocumentation (Sonnet-4) | DeepWiki | Improvement |
-|-------------------|---------------------|----------|-------------|
-| High-Level (Python, JS, TS) | **79.14%** | 68.67% | **+10.47%** |
-| Managed (C#, Java) | **68.84%** | 64.80% | **+4.04%** |
-| Systems (C, C++) | 53.24% | 56.39% | -3.15% |
-| **Overall Average** | **68.79%** | **64.06%** | **+4.73%** |
-
-### Results on Representative Repositories
-
-| Repository | Language | LOC | codedocumentation-Sonnet-4 | DeepWiki | Improvement |
-|------------|----------|-----|-------------------|----------|-------------|
-| All-Hands-AI--OpenHands | Python | 229K | **82.45%** | 73.04% | **+9.41%** |
-| puppeteer--puppeteer | TypeScript | 136K | **83.00%** | 64.46% | **+18.54%** |
-| sveltejs--svelte | JavaScript | 125K | **71.96%** | 68.51% | **+3.45%** |
-| Unity-Technologies--ml-agents | C# | 86K | **79.78%** | 74.80% | **+4.98%** |
-| elastic--logstash | Java | 117K | **57.90%** | 54.80% | **+3.10%** |
-
-**View comprehensive results:** See [paper](https://arxiv.org/abs/2510.24428) for complete evaluation on 21 repositories spanning all supported languages.
-
----
 
 ## How It Works
 
